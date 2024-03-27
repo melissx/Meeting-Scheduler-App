@@ -47,7 +47,9 @@ function SideNav() {
       <div className="flex justify-center">
       <Image src='/logo.svg' width={32} height={32}/>
       </div>
+      <Link href={'/create-meeting'}>
         <Button className='w-full rounded mt-8'>Create</Button>
+      </Link>
         <div className="mt-5 flex flex-col gap-2">
           {menu.map((item, index) => (
             <Link href={item.path}>
