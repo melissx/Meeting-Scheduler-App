@@ -1,6 +1,8 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs';
 
 function Header() {
   return (
@@ -12,8 +14,8 @@ function Header() {
           <li className='hover:text-slate-400'>Pricing</li>
         </ul>
         <div className="flex gap-4">
-          <Button>Login</Button>
-          <Button>Register</Button>
+         <LoginLink><Button>Login</Button></LoginLink>
+         <RegisterLink><Button>Register</Button></RegisterLink>
         </div>
       </div>
     </div>
